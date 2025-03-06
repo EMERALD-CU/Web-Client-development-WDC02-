@@ -35,12 +35,12 @@ let diameter = 2 * radius
 let circumference = 2 * Math.PI * radius
 
 // calculate area of circle
-let area1 = (circumference / 2) * radius
+let area1 = Math.PI *Math.pow(radius, 2)
 
 // print
 console.log("Diameter lingkaran adalah: " + diameter)
 console.log("Keliling lingkaran adalah: " + circumference.toFixed(4))
-console.log("Luas lingkaran: " + area1.toFixed(4))
+console.log("Luas lingkaran: " + Math.floor(area1 * 1000) / 1000)
 ```
 
 **3. Write a code to find angles of triangle if two angles are given**
@@ -56,7 +56,7 @@ let angleB = 65
 let angleC = 180 - (angleA + angleB)
 
 // Print
-console.log("Sudut ketiga adalah: " + angleC + " derajat")
+console.log("Sudut ketiga adalah: " + angleC)
 ```
 
 **4. Write a code to get difference between dates in days**
@@ -72,7 +72,7 @@ let date2 = new Date('2024-03-21')
 let daysDifference = date2.getDay() -date1.getDay()
 
 // Print
-console.log("selisih dua tanggal: " + daysDifference)
+console.log("days difference: " + daysDifference)
 ```
 
 **5. Write a code to print your name initial in uppercase**
@@ -94,5 +94,5 @@ let initial2 = nameParts[1].charAt(0).toUpperCase();
 let initial = initial1 + initial2
 
 // print
-console.log("inisial nama saya: " + initial)
+console.log("inisial nama anda: " + initial)
 ```
